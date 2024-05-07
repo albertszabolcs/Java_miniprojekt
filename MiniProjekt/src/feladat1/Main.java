@@ -28,6 +28,8 @@ public class Main {
             for (String sor : hallgatokNevei) {
                 System.out.println(sor);
             }
+        } catch (FileNotFoundException e) {
+            System.out.println("A fájl nem található: " + e.getMessage());
         } catch (Exception e) {
             System.out.println("Hiba történt a fájl beolvasása során: " + e.getMessage());
         }
