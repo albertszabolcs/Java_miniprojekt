@@ -25,6 +25,9 @@ public class Main {
                 hallgatokNevei.add(sor);
             }
             scanner.close();
+            for (String sor : hallgatokNevei) {
+                System.out.println(sor);
+            }
         } catch (Exception e) {
             System.out.println("Hiba történt a fájl beolvasása során: " + e.getMessage());
         }
