@@ -14,7 +14,7 @@ public class Main {
         hallgato.listazas();
         hallgato.tantargyHozzaadas("Matek",5);
         ArrayList<String> tantargyak = new ArrayList<>(Arrays.asList("Matek", "Roman", "Magyar"));
-        ArrayList<String> hallgatokNevei = new ArrayList<>();
+        ArrayList<String> hallgatokJegyei = new ArrayList<>();
         Map<Integer, Hallgato> hallgatok = new HashMap<>();
         try {
             File File = new File("./src/jegyek.txt");
@@ -22,10 +22,10 @@ public class Main {
 
             while (scanner.hasNextLine()) {
                 String sor = scanner.nextLine();
-                hallgatokNevei.add(sor);
+                hallgatokJegyei.add(sor);
             }
             scanner.close();
-            for (String sor : hallgatokNevei) {
+            for (String sor : hallgatokJegyei) {
                 System.out.println(sor);
             }
         } catch (FileNotFoundException e) {
